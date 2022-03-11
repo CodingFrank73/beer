@@ -5,6 +5,7 @@ import Nav from "./nav";
 
 
 const Gallery = () => {
+    console.log(window);
 
     const [beers, setBeers] = useState([]);
 
