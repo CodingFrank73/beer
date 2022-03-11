@@ -1,11 +1,14 @@
-import '../App.css';
+// import '../App.css';
 import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
         <div className='home-container'>
             <figure>
-                <img src="/image/Bild1.png" alt="BierBild1" />
+                <div className='img-wrapper'>
+                    <img src="/image/Bild1.png" alt="BierBild1" />
+                </div>
+
                 <Link to="gallery">
                     <figcaption><h2>All Beers</h2></figcaption>
                 </Link>
@@ -13,7 +16,10 @@ const Home = () => {
             </figure>
 
             <figure>
-                <img src="/image/Bild2.png" alt="BierBild2" />
+                <div className='img-wrapper'>
+                    <img src="/image/Bild2.png" alt="BierBild2" />
+                </div>
+
                 <Link to={`/random`}>
                     <figcaption><h2>Random Beer</h2></figcaption>
                 </Link>

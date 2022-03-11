@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Nav from "./nav";
 
 
+
 const Gallery = () => {
 
     const [beers, setBeers] = useState([]);
@@ -19,10 +20,10 @@ const Gallery = () => {
     }, []);
 
     return (
-        <div>
+        <div className="gallery-map">
             {beers.map((item, i) => {
                 return (
-                    <div>
+                    <div className="gallery-container">
                         <div className="gallery-image">
                             <img key={i} src={item.image_url} alt="bild" />
                         </div>
