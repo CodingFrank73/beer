@@ -13,6 +13,13 @@ Body{
 }
 
 .nav{
+  max-height: 150px;
+}
+
+.nav-Wrapper{
+  height: 15%;
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }
 
@@ -51,37 +58,38 @@ figure{
   line-height: 1.5em;
 }
 
-.gallery-container{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  place-items: center;
-  gap: 10%;
-  border-bottom: 2px solid black;
-  padding-bottom: 10%;
-  margin: 10% 5%;
-}
-
-.gallery-container h2{
-  font-weight: 500;
-  font-size: 1.875em;
-}
-
-.gallery-container h3, 
-.detail-container h3{
+.beerList-container h3, 
+.beerDetail-container h3{
   font-weight: 900;
   font-size: 1.125em;
   color:#FFCA41;
   margin-bottom: 1em;
 }
 
-.gallery-container p, 
-.detail-container p{
+.beerList-container p, 
+.beerDetail-container p{
   font-weight: 500;
   font-size: 0.938em;
   margin-bottom: 2em;
 }
 
-.gallery-container a{
+.beerList-container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+  gap: 10%;
+  border-bottom: 2px solid black;
+  padding-bottom: 10%;
+  margin: 10% auto;
+  max-width: 500px;
+}
+
+.beerList-container h2{
+  font-weight: 500;
+  font-size: 1.875em;
+}
+
+.beerList-container a{
   background-color: #FFCA41;
   font-weight: 500;
   font-size: 1.25em;
@@ -91,33 +99,41 @@ figure{
   border-radius: 40px;
 }
 
-.gallery-image img{
+.beerList-image img{
   width: 100%
 }
 
-.detail-container{
-  margin: 10%;
-}
-
-.detail-image{
+.beerDetail-image{
   width: 12.75em;
   margin: 0 auto;
 }
 
-.detail-container h2{
+.beerDetail-container{
+  margin: 10% auto;
+  max-width: 500px;
+}
+
+.beerDetail-container h2{
   font-weight: 500;
   font-size: 3.25em;
 }
 
-.detail-container p{
+.beerDetail-container p{
   line-height: 19.78px;
   font-size: 15px;
 }
 
-.detail-discription-metaInfo{
+.beerDetail-discription-metaInfo{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1em;
+}
+
+.beerDetail-discription-metaInfo p{
+  font-weight: 500;
+  font-size: .813em;
+  color: rgba(51, 51, 51, .5);
+  margin-bottom: unset;
 }
 
 .column-left{
@@ -127,15 +143,6 @@ figure{
 .column-right{
   grid-column: 2;
   text-align: right;
-}
-
-
-.detail-discription-metaInfo p{
-  font-weight: 500;
-  font-size: .813em;
-  
-  color: rgba(51, 51, 51, .5);
-  margin-bottom: unset;
 }
 
 .logo{

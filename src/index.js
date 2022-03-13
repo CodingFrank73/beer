@@ -4,18 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Gallery from './Component/gallery'
-import Detail from './Component/detail'
-import Random from './Component/random'
+import BeerDetail from './Component/beerDetail';
+import BeerList from './Component/beerList';
 
 ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="gallery" element={<Gallery />} />
-        <Route path="/detail/:_id" element={<Detail />} />
-        <Route path="random" element={<Random />} />
+        <Route path="beerlist" element={<BeerList />} />
+        <Route path="/beer/:_id" element={<BeerDetail />} />
+        <Route path="beer/:_id" element={<BeerDetail />} />
       </Routes>
     </React.StrictMode >
   </BrowserRouter >,

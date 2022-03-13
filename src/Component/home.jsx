@@ -10,7 +10,7 @@ const Home = () => {
                     <img src="/image/Bild1.png" alt="BierBild1" />
                 </div>
 
-                <Link to="gallery">
+                <Link to="beerlist">
                     <figcaption><h2>All Beers</h2></figcaption>
                 </Link>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ratione tempora atque iure sed! Aperiam dignissimos quo sapiente, laborum perspiciatis ratione perferendis.</p>
@@ -21,7 +21,7 @@ const Home = () => {
                     <img src="/image/Bild2.png" alt="BierBild2" />
                 </div>
 
-                <Link to={`/random`}>
+                <Link to={`/beer/${'random'}`}>
                     <figcaption><h2>Random Beer</h2></figcaption>
                 </Link>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam dignissimos quo sapiente, laborum perspiciatis ratione perferendis doloremque hic quod aliquam voluptatibus nemo quam quisquam.</p>
