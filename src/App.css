@@ -16,13 +16,6 @@ Body{
   max-height: 150px;
 }
 
-.nav-Wrapper{
-  height: 15%;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 a{
   text-decoration: none;
 }
