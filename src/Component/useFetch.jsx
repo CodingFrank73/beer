@@ -7,7 +7,9 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(url)
+        const cleanUp = new AbortController();
+
+        fetch(url, { signal: cleanUp.signal })
             .then(res => {
                 if (!res.ok) {
                     throw Error('Daten können nicht geliefert werden...');
@@ -27,6 +29,8 @@ const useFetch = (url) => {
                     setError(err.message);
                 }
             })
+
+        return () => cleanUp.abort();
     }, [url]);
 
     return { data, isPending, error };

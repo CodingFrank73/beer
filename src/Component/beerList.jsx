@@ -9,8 +9,8 @@ const BeerList = () => {
 
     return (
         <div className="beerList-map">
-            {isPending && <div>Loading...</div>};
-            {error && <div>{error}</div>};
+            {isPending && <div>Loading...</div>}
+            {error && <div>{error}</div>}
             {beers && (
                 beers.map((item, i) => {
                     return (
